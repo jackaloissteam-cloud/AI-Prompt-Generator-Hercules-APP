@@ -3,8 +3,11 @@ revision = 3
 requires-python = ">=3.12"
 
 [options]
-exclude-newer = "2026-03-17T21:28:27.054454Z"
+exclude-newer = "0001-01-01T00:00:00Z" # This has no effect and is included for backwards compatibility when using relative exclude-newer values.
 exclude-newer-span = "P14D"
+
+[options.exclude-newer-package]
+workshop-connect = "2027-01-02T00:00:00Z"
 
 [[package]]
 name = "annotated-doc"
